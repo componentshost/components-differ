@@ -1,6 +1,6 @@
 {
   "name": "components-differ",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Simple CLI to create Shadcn components from project",
   "main": "index.mjs",
   "bin": "index.mjs",
@@ -9,8 +9,7 @@
   },
   "dependencies": {
     "commander": "^12.1.0",
-    "ignore": "^6.0.2",
-    "components-differ": "^1.0.2"
+    "ignore": "^6.0.2"
   },
   "devDependencies": {
     "vitest": "^2.1.1"
