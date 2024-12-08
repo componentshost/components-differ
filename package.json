@@ -1,0 +1,38 @@
+{
+  "name": "components-differ",
+  "version": "1.0.0",
+  "description": "Simple CLI to create Shadcn components from project",
+  "main": "index.mjs",
+  "bin": "index.mjs",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ignore": "^6.0.2",
+    "components-differ": "^1.0.3"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.1"
+  },
+  "scripts": {
+    "test": "npx vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/componentshost/components-differ.git"
+  },
+  "keywords": [
+    "components",
+    "shadcn",
+    "differ",
+    "react",
+    "vite"
+  ],
+  "author": "Izet Molla",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/componentshost/components-differ/issues"
+  },
+  "homepage": "https://github.com/componentshost/components-differ#readme"
+}
