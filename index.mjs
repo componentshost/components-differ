@@ -25,8 +25,8 @@ const runCommand = (command) => {
 };
 
 const ensureGitignore = () => {
-  const dockerignorePath = path.join(process.cwd(), ".dockerignore");
-  if (!fs.existsSync(dockerignorePath)) {
+  const gitignorePath = path.join(process.cwd(), ".gitignore");
+  if (!fs.existsSync(gitignorePath)) {
     console.log(".gitignore file is missing. Creating one...");
     const content = `
 /node_modules
@@ -67,10 +67,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 `;
-    fs.writeFileSync(dockerignorePath, content, "utf8");
-    console.log(".dockerignore file created with default rules.");
+    fs.writeFileSync(gitignorePath, content, "utf8");
+    console.log(".gitignore file created with default rules.");
   } else {
-    console.log(".dockerignore file already exists.");
+    console.log(".gitignore file already exists.");
   }
 };
 
